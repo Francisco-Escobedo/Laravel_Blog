@@ -26,6 +26,22 @@ Route::get('/portfolio', function()
     return View::make('portfolio');
 });
 
+Route::get('/weather_map', function()
+{
+    return View::make('weather_map');
+});
+
+Route::get('/simplesimon', function()
+{
+    return View::make('simplesimon');
+});
+
+Route::get('/whackamole', function()
+{
+    return View::make('whackamole');
+});
+
+
 Route::get('/rolldice/{guess?}', function($guess='0')
 {
     $randomNumber = mt_rand(1,6);

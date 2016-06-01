@@ -39,7 +39,7 @@
         <div class="col s12 m4">
           <div class="icon-block">
             <img class="materialboxed" data-caption="3 Day Forecast" width="270" src="/img/weathermap.png">
-            <h5 class="center"><a href="/weather_map.html">3 Day Forecast</a></h5>
+            <h5 class="center"><a href="/weather_map">3 Day Forecast</a></h5>
 
             <p class="light">Forecast for the next three days utilizing Google Maps and OpenWeatherMap API's. This mash-up allows the marker to be dragged and dropped anywhere on the map, returning the forecast for the designated location. </p>
           </div>
@@ -48,7 +48,7 @@
         <div class="col s12 m4">
           <div class="icon-block">
             <img class="materialboxed" data-caption="Simple Simon Game" width="310" src="/img/simplesimongame.png">
-            <h5 class="center"><a href="/simplesimon.html">Simple Simon</a></h5>
+            <h5 class="center"><a href="/simplesimon">Simple Simon</a></h5>
 
             <p class="light">Memory Game created using HTML, CSS, and JavaScript. Follow the randomly generated flashing patterns to test your memory.</p>
           </div>
@@ -57,7 +57,7 @@
         <div class="col s12 m4">
           <div class="icon-block">
             <img class="materialboxed" data-caption="Whack-A-Mole Game" width="341" src="/img/whackamolegame.png">
-            <h5 class="center"><a href="/whackamole.html">Whack-a-Mole </a></h5>
+            <h5 class="center"><a href="/whackamole">Whack-a-Mole </a></h5>
 
             <p class="light">Arcade style game. Utilizes HTML, CSS, and JavaScript to randomize position of moles on the game-board. Click the moles before they disappear and beat your own high score! Best viewed full-screen in a desktop or laptop browser. </p>
           </div>
