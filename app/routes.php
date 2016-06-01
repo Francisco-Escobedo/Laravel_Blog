@@ -18,12 +18,12 @@ Route::get('/', function()
 
 Route::get('/resume', function()
 {
-    return "<h1>This is my resume</h1>";
+    return View::make('resume');
 });
 
 Route::get('/portfolio', function()
 {
-    return "<h1>This is my portfolio</h1>";
+    return View::make('portfolio');
 });
 
 Route::get('/rolldice/{guess?}', function($guess='0')
