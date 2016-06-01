@@ -11,35 +11,17 @@
 |
 */
 
-Route::get('/', function()
-{
-	return View::make('hello');
-});
+Route::get('/', 'HomeController@showWelcome');
 
-Route::get('/resume', function()
-{
-    return View::make('resume');
-});
+Route::get('/resume', 'HomeController@showResume');
 
-Route::get('/portfolio', function()
-{
-    return View::make('portfolio');
-});
+Route::get('/portfolio', 'HomeController@showPortfolio');
 
-Route::get('/weather_map', function()
-{
-    return View::make('weather_map');
-});
+Route::get('/weather_map', 'HomeController@showWeatherMap');
 
-Route::get('/simplesimon', function()
-{
-    return View::make('simplesimon');
-});
+Route::get('/simplesimon', 'HomeController@showSimpleSimon');
 
-Route::get('/whackamole', function()
-{
-    return View::make('whackamole');
-});
+Route::get('/whackamole', 'HomeController@showWhackamole');
 
 
 Route::get('/rolldice/{guess?}', function($guess='0')
