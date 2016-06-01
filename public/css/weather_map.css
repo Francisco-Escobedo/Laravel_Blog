@@ -9,3 +9,8 @@
     left: 110px;
     background-image: url(/img/light_grey.png);
 }
+
+#map-canvas {
+    width: 920px;
+    height: 481px;
+}

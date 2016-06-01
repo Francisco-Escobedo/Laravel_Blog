@@ -56,7 +56,7 @@
       <div class="footer-copyright">
         <div class="container">
         © 2016 Pancho Escobedo
-        <a class="grey-text text-lighten-4 right" href="portfolio.html">Back to portfolio</a>
+        <a class="grey-text text-lighten-4 right" href="/portfolio">Back to portfolio</a>
         </div>
       </div>
     </footer>
