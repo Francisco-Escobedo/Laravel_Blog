@@ -2,8 +2,9 @@
 
 @section('content')
   <nav class="white" role="navigation">
+    <a id="logo-container" href="#" class="brand-logo black-text left">Francisco E. Escobedo</a>
     <div class="nav-wrapper container">
-      <a id="logo-container" href="#" class="brand-logo">Francisco E Escobedo</a>
+      
       <ul class="right hide-on-med-and-down">
         <li><a href="#"></a></li>
 
