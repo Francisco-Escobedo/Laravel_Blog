@@ -23,6 +23,7 @@ Route::get('/simplesimon', 'HomeController@showSimpleSimon');
 
 Route::get('/whackamole', 'HomeController@showWhackamole');
 
+Route::get('/whackamole', 'HomeController@RollDice{guess?}');
 
 Route::get('/rolldice/{guess?}', function($guess='0')
 {
