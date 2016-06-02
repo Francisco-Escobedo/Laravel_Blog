@@ -39,3 +39,5 @@ Route::get('/rolldice/{guess?}', function($guess='0')
 });
 
 Route::resource('posts', 'PostsController');
+
+Route::resource('posts/create', 'PostsController@create');
