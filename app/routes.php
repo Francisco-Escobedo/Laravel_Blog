@@ -41,3 +41,11 @@ Route::get('/rolldice/{guess?}', function($guess='0')
 Route::resource('posts', 'PostsController');
 
 Route::resource('posts/create', 'PostsController@create');
+
+Route::resource('posts/show', 'PostsController@show');
+
+Route::get('orm-test', function ()
+{
+    $post = Post::find(1);
+    return $post;
+});
