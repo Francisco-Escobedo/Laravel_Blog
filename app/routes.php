@@ -37,3 +37,5 @@ Route::get('/rolldice/{guess?}', function($guess='0')
     return View::make('roll-dice');
 
 });
+
+Route::resource('posts', 'PostsController');
