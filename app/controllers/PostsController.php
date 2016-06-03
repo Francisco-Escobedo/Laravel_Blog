@@ -73,9 +73,11 @@ class PostsController extends \BaseController {
 	 * @param  int  $id
 	 * @return Response
 	 */
-	public function edit($id)
+	public function edit($id=1)
 	{
-		//
+		$post = Post::find($id);
+		return View::make('posts.edit')->with('post', $post);
+
 	}
 
 
@@ -87,7 +89,25 @@ class PostsController extends \BaseController {
 	 */
 	public function update($id)
 	{
-		//
+		$post=Post::find($id);
+		$post->title = Input::get('title');
+		$post->body = Input::get('body');
+		$post->image_url = Input::get('image');
+		$post->tags = Input::get('tags');
+		$post->user_id = User::first()->id;
+		
+		$validator = Validator::make(Input::all(), Post::$rules);
+		if ($validator->fails()) {
+			// validation failed, redirect to the post create page with validation errors and old inputs
+			return Redirect::back()->withInput()->withErrors($validator);
+		} else {
+			// saves post after successful validation of inputs
+			if ($post->save()){
+				return Redirect::action('PostsController@show', $post->id);
+			} else {
+				return Redirect::back()->withInput();
+			}
+		}
 	}
 
 
