@@ -3,6 +3,11 @@
 @section('content')
 <h1> Create a blog post </h1>
 <div class="container">
+<p> {{ $errors->first('title', '<span class="help-block">:message</span>') }} </p>
+<p> {{ $errors->first('image', '<span class="help-block">:message</span>') }} </p>
+<p> {{ $errors->first('body', '<span class="help-block">:message</span>') }} </p>
+<p> {{ $errors->first('tags', '<span class="help-block">:message</span>') }} </p>
+
     <form action='{{{ action('PostsController@store') }}}' method='POST'>
 
         <fieldset class="form-group">

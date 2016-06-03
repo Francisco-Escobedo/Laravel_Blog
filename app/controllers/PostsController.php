@@ -39,10 +39,17 @@ class PostsController extends \BaseController {
 		$post->tags = Input::get('tags');
 		$post->user_id = User::first()->id;
 		
-		if ($post->save()){
-			return Redirect::action('PostsController@show', $post->id);
+		$validator = Validator::make(Input::all(), Post::$rules);
+		if ($validator->fails()) {
+			// validation failed, redirect to the post create page with validation errors and old inputs
+			return Redirect::back()->withInput()->withErrors($validator);
 		} else {
-			return Redirect::back()->withInput();
+			// saves post after successful validation of inputs
+			if ($post->save()){
+				return Redirect::action('PostsController@show', $post->id);
+			} else {
+				return Redirect::back()->withInput();
+			}
 		}
 	}
 
