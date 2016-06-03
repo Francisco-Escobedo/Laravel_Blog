@@ -10,6 +10,7 @@
     <p> Tags: {{{$post->tags}}} </p>
     <p> Written on: {{{$post->created_at}}} </p>
 @endforeach
+{{ $posts->links() }}
 </div>
 
 @stop
