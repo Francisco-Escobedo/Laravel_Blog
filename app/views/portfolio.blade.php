@@ -2,8 +2,8 @@
 
 @section('content')
   <nav class="white" role="navigation">
-    <a id="logo-container" href="#" class="brand-logo black-text left">Francisco E. Escobedo</a>
     <div class="nav-wrapper container">
+        <a id="logo-container" href="#" class="brand-logo black-text">Francisco E. Escobedo</a>
       
       <ul class="right hide-on-med-and-down">
         <li><a href="#"></a></li>
@@ -111,7 +111,7 @@
       <div class="row">
         <div class="col l6 s12">
           <h5 class="white-text">Bio</h5>
-          <p class="grey-text text-lighten-4">Originally from San Antonio, graduate of Trinity University. Employed with Molina Health Care from 2013 to 2015 in Bothell, WA (North of Seattle), and returned back to San Antonio to pursue a Masters in Health Care Administration, again at Trinity. Enrolled in Code Up to acquire programming skills for use in the Health Care setting. </p>
+          <p class="grey-text text-lighten-4">Originally from San Antonio, graduate of Trinity University. Employed with Molina Health Care from 2013 to 2015 in Bothell, WA (North of Seattle), and returned back to San Antonio to pursue a Masters in Health Care Administration, again at Trinity. Enrolled in Codeup to acquire programming skills for use in the Health Care setting. </p>
 
 
         </div>
@@ -129,7 +129,7 @@
     </div>
     <div class="footer-copyright">
       <div class="container">
-      Made by <a class="brown-text text-lighten-5">Francisco E Escobedo</a>
+      Made by <a class="brown-text text-lighten-5">Francisco E. Escobedo</a>
       </div>
     </div>
   </footer>
