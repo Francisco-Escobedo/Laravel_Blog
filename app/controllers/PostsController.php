@@ -38,15 +38,19 @@ class PostsController extends \BaseController {
 		$post->image_url = Input::get('image');
 		$post->tags = Input::get('tags');
 		$post->user_id = User::first()->id;
-		
+
 		$validator = Validator::make(Input::all(), Post::$rules);
 		if ($validator->fails()) {
 			// validation failed, redirect to the post create page with validation errors and old inputs
+			Session::flash('errorMessage', 'Something went wrong with your post');
+			$message = Session::get('errorMessage');
 			return Redirect::back()->withInput()->withErrors($validator);
 		} else {
 			// saves post after successful validation of inputs
 			if ($post->save()){
-				return Redirect::action('PostsController@show', $post->id);
+				Session::flash('successMessage', 'Post successfully saved');
+				$message = Session::get('successMessage');
+				return Redirect::action('PostsController@create');
 			} else {
 				return Redirect::back()->withInput();
 			}
@@ -95,15 +99,19 @@ class PostsController extends \BaseController {
 		$post->image_url = Input::get('image');
 		$post->tags = Input::get('tags');
 		$post->user_id = User::first()->id;
-		
+
 		$validator = Validator::make(Input::all(), Post::$rules);
 		if ($validator->fails()) {
+			Session::flash('errorMessage', 'Something went wrong with your post');
+			$message = Session::get('errorMessage');
 			// validation failed, redirect to the post create page with validation errors and old inputs
 			return Redirect::back()->withInput()->withErrors($validator);
 		} else {
 			// saves post after successful validation of inputs
 			if ($post->save()){
-				return Redirect::action('PostsController@show', $post->id);
+				Session::flash('successMessage', 'Post successfully saved');
+				$message = Session::get('successMessage');
+				return Redirect::action('PostsController@edit');
 			} else {
 				return Redirect::back()->withInput();
 			}

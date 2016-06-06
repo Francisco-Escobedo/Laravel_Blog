@@ -3,6 +3,15 @@
 @section('content')
 @include('partials.blogheader')
 <h1> Create a blog post </h1>
+
+@if (Session::has('successMessage'))
+    <div class="alert alert-success">{{{ Session::get('successMessage') }}}</div>
+@endif
+
+@if (Session::has('errorMessage'))
+    <div class="alert alert-danger">{{{ Session::get('errorMessage') }}}</div>
+@endif
+
 <div class="container">
 <p> {{ $errors->first('title', '<span class="help-block">:message</span>') }} </p>
 <p> {{ $errors->first('image', '<span class="help-block">:message</span>') }} </p>
