@@ -48,6 +48,7 @@ class PostsController extends \BaseController {
 		} else {
 			// saves post after successful validation of inputs
 			if ($post->save()){
+				Log::info('New post containing title, body, image_url, tags');
 				Session::flash('successMessage', 'Post successfully saved');
 				$message = Session::get('successMessage');
 				return Redirect::action('PostsController@create');
