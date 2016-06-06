@@ -12,7 +12,7 @@
     <p> <img src="{{{$post->image_url}}}" height="100" width="100"> </p>
     <p> {{{$post->body}}} </p>
     <p> Tags: {{{$post->tags}}} </p>
-    <p> Written on: {{{$post->created_at}}} </p>
+    <p> Written on: {{$post->created_at->setTimezone('America/Chicago')->format('D, M d \a\t h:ia T');}} </p>
 @endforeach
 {{ $posts->links() }}
 </div>
