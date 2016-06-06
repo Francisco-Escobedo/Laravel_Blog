@@ -6,14 +6,16 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#">Francisco escBlog</a>
+      <a class="navbar-brand" href="/posts">Francisco escBlog</a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
         <li class="active"><a href="#">Home</a></li>
         <li><a href="/posts/create">Create Post</a></li>
-        <!-- Need to updated edit to dynamically refer to individual post -->
+        @if(isset($post->id))
         <li><a href="/posts/1/edit">Edit Post</a></li>
+        <li><a href="/posts/delete">Delete Post</a></li>
+        @endif
         <li><a href="/posts">All Posts</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
