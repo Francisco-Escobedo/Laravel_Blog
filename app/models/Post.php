@@ -10,4 +10,9 @@ class Post extends BaseModel {
         'tags'=>'required|max:300'
 
     );
+
+    public function user()
+    {
+      return $this->belongsTo('User');
+    }
 }
