@@ -1,6 +1,7 @@
 @extends('layouts.master')
 
 @section('content')
+@include('partials.blogheader')
 <h1> Edit blog post  </h1>
 <div class="container">
 <p> {{ $errors->first('title', '<span class="help-block">:message</span>') }} </p>
