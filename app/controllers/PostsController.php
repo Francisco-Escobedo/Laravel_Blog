@@ -2,6 +2,14 @@
 
 class PostsController extends \BaseController
 {
+
+    public function __construct()
+    {
+      $this->beforeFilter('auth', array('except' => array('index', 'show')));
+    }
+    // only gives that userclass exclusive ability to do those things
+    // except filters evertthing for that userclass except the listed things.
+
     /**
      * Display a listing of the resource.
      *

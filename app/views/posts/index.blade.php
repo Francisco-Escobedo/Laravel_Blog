@@ -6,6 +6,10 @@
 
 <div class="container">
 
+@if (Session::has('successMessage'))
+    <div class="alert alert-success">{{{ Session::get('successMessage') }}}</div>
+@endif
+
 <div class="text-center text-justify">
 @foreach($posts as $post)
     <h1><a href="posts/{{{$post->id}}}">{{{$post->title}}} </a></h1>

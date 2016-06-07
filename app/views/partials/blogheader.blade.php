@@ -10,17 +10,19 @@
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Home</a></li>
+        @if(Auth::check())
         <li><a href="/posts/create">Create Post</a></li>
-        @if(isset($post->id))
         <li><a href="/posts/1/edit">Edit Post</a></li>
         <li><a href="/posts/delete">Delete Post</a></li>
         @endif
         <li><a href="/posts">All Posts</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        @if(Auth::check())
+            <li><a href="/logout"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
+        @else
+            <li><a href="/login"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        @endif
       </ul>
     </div>
   </div>
