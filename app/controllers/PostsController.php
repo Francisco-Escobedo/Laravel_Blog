@@ -44,7 +44,7 @@ class PostsController extends \BaseController
         $post->body = Input::get('body');
         $post->image_url = Input::get('image');
         $post->tags = Input::get('tags');
-        $post->user_id = User::first()->id;
+        $post->user_id = Auth::id();
 
         $validator = Validator::make(Input::all(), Post::$rules);
         if ($validator->fails()) {
@@ -76,9 +76,12 @@ class PostsController extends \BaseController
      */
     public function show($id = 1)
     {
-        $post = Post::find($id);
-
+        try{
+        $post = Post::findOrFail($id);
         return View::make('posts.show')->with('post', $post);
+        } catch (exception $e) {
+            App::abort(404);
+        }
     }
 
     /**
@@ -139,6 +142,10 @@ class PostsController extends \BaseController
      */
     public function destroy($id)
     {
-        //
+        $post = Post::find($id);
+        Session::flash('successMessage', 'Post deleted successfully');
+        $message = Session::get('successMessage');
+        $post->delete();
+        return Redirect::action('PostsController@index');
     }
 }

@@ -10,10 +10,9 @@
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
+
         @if(Auth::check())
         <li><a href="/posts/create">Create Post</a></li>
-        <li><a href="/posts/1/edit">Edit Post</a></li>
-        <li><a href="/posts/delete">Delete Post</a></li>
         @endif
         <li><a href="/posts">All Posts</a></li>
       </ul>

@@ -12,8 +12,8 @@
 
 <div class="text-center text-justify">
 @foreach($posts as $post)
-    <h1><a href="posts/{{{$post->id}}}">{{{$post->title}}} </a></h1>
-    <p> <img src="{{{$post->image_url}}}" height="100" width="100"> </p>
+    <h1><a href="/posts/{{{$post->id}}}">{{{$post->title}}} </a></h1>
+    <p class="pull-right"> <img src="{{{$post->image_url}}}" height="100" width="150"> </p>
     <p> {{{$post->body}}} </p>
     <p> Tags: {{{$post->tags}}} </p>
     <p> Written on: {{$post->created_at->setTimezone('America/Chicago')->format('D, M d \a\t h:ia T');}} </p>

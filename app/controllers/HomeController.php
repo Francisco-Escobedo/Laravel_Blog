@@ -14,6 +14,10 @@ class HomeController extends BaseController
     |	Route::get('/', 'HomeController@showWelcome');
     |
     */
+    public function notFound()
+    {
+      return View::make('404');
+    }
 
     public function showWelcome()
     {
@@ -70,6 +74,8 @@ class HomeController extends BaseController
 		public function logout()
 		{
 			Auth::logout();
+      Session::flash('successMessage', 'Successfully logged out');
+      $message = Session::get('successMessage');
       return Redirect::back();
 			// flash message, you have successfully logged out
 			// redirect to main page

@@ -44,6 +44,8 @@ Route::post('/login/try', 'HomeController@doLogin');
 
 Route::get('/logout', 'HomeController@logout');
 
+Route::get('/errors/missing', 'HomeController@notFound');
+
 Route::get('orm-test', function ()
 {
     $post = Post::find(1);
