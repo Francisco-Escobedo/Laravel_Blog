@@ -76,7 +76,7 @@ class HomeController extends BaseController
 			Auth::logout();
       Session::flash('successMessage', 'Successfully logged out');
       $message = Session::get('successMessage');
-      return Redirect::back();
+      return Redirect::action('PostsController@index');
 			// flash message, you have successfully logged out
 			// redirect to main page
 		}
