@@ -17,6 +17,9 @@
         <li><a href="/posts">All Posts</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
+        @if(null !== Auth::user())
+         <li> <a href="#">Hello, {{Auth::user()->username}}!</a></li>
+        @endif
         @if(Auth::check())
             <li><a href="/logout"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
         @else
