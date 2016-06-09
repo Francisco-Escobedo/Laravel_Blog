@@ -17,11 +17,11 @@
                 <div class="row">
                     <div class="col-md-12">
 
-                    <p> 
+                    <p>
                         <img src="/img/pw.jpg" alt="Pancho" class="img-circle img-responsive center-block">
                     </p>
 
-                    
+
                     </div>
                 </div>
 
@@ -44,7 +44,7 @@
                     <i class="fa fa-google-plus-square fa-3x"></i>
                     </a>
                     <a href="https://www.facebook.com/francisco.e.escobedo" target="_blank">
-                    <i class="fa fa-facebook-official fa-3x"></i> 
+                    <i class="fa fa-facebook-official fa-3x"></i>
                     </a>
                     <a href="https://www.instagram.com/franciscoees/" target="_blank">
                     <i class="fa fa-instagram fa-3x"></i>
@@ -126,38 +126,10 @@
                   <div class="media-body">
 
                     <h4 class="media-heading">B.S. Finance and Management -- San Antonio, TX -- August 2009 to May 2013</h4>
-                    Courses included a wide variety of "common curriculum" classes that ranged from humanities and literature study to organic chemistry. The business specific classes spanned Managerial Accounting to Marketing to Management of info systems. I garnered an interested in Finance and management and took upper level courses such as International Finance and Human Resource Management. 
+                    Courses included a wide variety of "common curriculum" classes that ranged from humanities and literature study to organic chemistry. The business specific classes spanned Managerial Accounting to Marketing to Management of info systems. I garnered an interested in Finance and management and took upper level courses such as International Finance and Human Resource Management.
 
                   </div>
                 </div>
-
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="col-md-8 col-md-offset-2">
-                        <h1> Contact Me </h1>
-                        </div>
-                    <div class="col-md-8 col-md-offset-2">
-                        <form>
-                          <div class="form-group">
-                            <label for="exampleInputEmail1">Email address</label>
-                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
-                          </div>
-                          <div class="textarea">
-                            <label for="textarea">Comments</label>
-                            <textarea rows="10" cols="98" placeholder="Enter Comments Here"></textarea> 
-                            <p class="textarea"></p>
-                          </div>
-                          <div class="checkbox">
-                            <label>
-                              <input type="checkbox" checked> Subscribe to Resume Updates
-                            </label>
-                          </div>
-                          <button type="submit" class="btn btn-default">Submit</button>
-                        </form>
-                    </div>
-                    </div>
-            </div>
-
         </div>
 
     </div>
