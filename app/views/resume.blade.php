@@ -38,7 +38,7 @@
                     <strong>Contact Me</strong><br>
                     206 East Castle Lane<br>
                     San Antonio, TX 78213<br>
-                    Website: <a href="franciscoe.xyz">franciscoe.xyz</a><br>
+                    Website: <a href="/">franciscoe.xyz</a><br>
                     Email: <a href="mailto:franciscoeescobedo@gmail.com">franciscoeescobedo@gmail.com</a><br>
                     <abbr tite="Phone">P:</abbr> (210) 216-2025<br>
                     <a href="https://plus.google.com/u/0/116115718272041194687/" target="_blank">

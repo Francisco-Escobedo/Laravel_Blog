@@ -28,7 +28,7 @@
 						<li role="separator" class="divider"></li>
 						<li><a href="/weather_map">3 Day Weather Forecast</a></li>
 						<li role="separator" class="divider"></li>
-						<li><a href="/">Simple Simon</a></li>
+						<li><a href="/simplesimon">Simple Simon</a></li>
           </ul>
 					<li><a href="/resume" class="medium">Resume</a></li>
 					<li><a href="/portfolio" class="medium">Portfolio</a></li>
