@@ -42,9 +42,10 @@
   </div><!-- /.container-fluid -->
 </nav>
 
-<a href="/resume"><img src="/img/professionalphoto.jpg" class="img-thumbnail center-block vertical-center bottommargin" height="auto" width="300"></a>
-	<div class="white text-center large">Hello, I am <a href="/resume"><strong>Francisco Escobedo</strong></a></div> <br>
+<a href="/resume"><img src="/img/professionalphoto.jpg" class="img-thumbnail center-block vertical-center bottommargin" height="auto" width="auto"></a>
+	<div class="white text-center large hidden-xs">Hello, I am <a href="/resume" class="white"><strong>Francisco Escobedo</strong></a></div> <br>
 	<div class="bottompad white text-center large hidden-xs">Full-Stack developer from San Antonio, TX </div>
-	<div class="smallbottompad white text-center large hidden-lg hidden-md hidden-sm">Full-Stack developer from</div>
-	<div class="white text-center large hidden-lg hidden-md hidden-sm">San Antonio, TX</div>
+	<div class="black text-center large hidden-lg hidden-md hidden-sm">Hello, I am <a href="/resume" class="black"><strong>Francisco Escobedo</strong></a></div> <br>
+	<div class="smallbottompad black text-center large hidden-lg hidden-md hidden-sm">Full-Stack developer from</div>
+	<div class="black text-center large hidden-lg hidden-md hidden-sm">San Antonio, TX</div>
 @stop
